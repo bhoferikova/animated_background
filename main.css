@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700');
+
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.title {
+    width: 100%;
+    position: absolute;
+    top: 50vh;
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 35px;
+    opacity: 0.7;
+}
+
+
+.container {
+    background-color: #58b5da;
+    background: linear-gradient(to left, #a7e4ec, #3cebf1);
+    width: 100%;
+    height: 100vh;
+
+}
+
+.circles-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 0px;
+    top: 0px;
+}
+
+.circle {
+    position: absolute;
+    display: black;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255,255,255,0.5);
+    /*animation-name: flying;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;*/
+    animation: flying 20s linear infinite;
+    bottom: -100px;
+}
+
+.circle:first-child {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0;
+    animation-duration: 12s;
+}
+
+.circle:nth-child(2) {
+    left: 10%;
+    width: 35px;
+    height: 35px;
+    animation-delay: 2s;
+}
+
+.circle:nth-child(3) {
+    left: 70%;
+    width: 35px;
+    height: 35px;
+    animation-delay: 4s;
+}
+
+.circle:nth-child(4) {
+    left: 45%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 2s;
+    animation-duration: 17s;
+}
+
+.circle:nth-child(5) {
+    left: 2%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 6s;
+}
+
+.circle:nth-child(6) {
+    left: 55%;
+    width: 35px;
+    height: 35px;
+    animation-delay: 8s;
+    animation-duration: 8s;
+}
+.circle:nth-child(7) {
+    left: 78%;
+    width: 95px;
+    height: 95px;
+    animation-delay: 3s;
+    animation-duration: 10s;
+}
+
+.circle:nth-child(8) {
+    left: 25%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 7s;
+}
+
+.circle:nth-child(9) {
+    left: 90%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 2s;
+}
+
+.circle:nth-child(10) {
+    left: 35%;
+    width: 45px;
+    height: 45px;
+    animation-delay: 5s;
+}
+
+@keyframes flying {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
